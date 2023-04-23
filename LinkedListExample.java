@@ -55,9 +55,15 @@ class LinkedList {
     public int last() {
         Node n = this.root;
         // If no such element, throw an exception
-        if(n == null) { throw new NoSuchElementException(); }
+        if(n == null) { 
+            throw new NoSuchElementException(); 
+        }
+
         // If it's just one element, return its value
-        if(n.next == null) { return n.value; }
+        if(n.next == null) { 
+            return n.value; 
+        }
+
         // Otherwise, search for the end of the list and return the last value
         while(n.next != null) {
             n = n.next;
