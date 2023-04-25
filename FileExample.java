@@ -50,6 +50,9 @@ public class FileExample {
 	  }
 	  return result;
 	}
+  //bugs
+    // there's no recursive call to getFiles, so it only visits one directory
+    // the .add outside the if should only happen if the given File is not a directory
 }
 
 
